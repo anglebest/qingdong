@@ -385,27 +385,27 @@
 		A6BF824422815D9200A66858 /* BaoXiaoSheng */ = {
 			isa = PBXGroup;
 			children = (
+				A6BF8285228179A000A66858 /* BaseViewControl */,
 				A6BF82C5228179A000A66858 /* AppDelegate.h */,
 				A6BF82E9228179A100A66858 /* AppDelegate.m */,
 				A6BF827B2281799F00A66858 /* AppDelegate+YKYtabBar.h */,
 				A6BF827C2281799F00A66858 /* AppDelegate+YKYtabBar.m */,
-				A6BF8285228179A000A66858 /* BaseViewControl */,
-				A6BF8348228179A200A66858 /* FriendViewControl */,
-				A6BF8292228179A000A66858 /* HomeViewControl */,
-				A6BF82C6228179A100A66858 /* MyViewControl */,
 				A6BF8347228179A200A66858 /* NJAppDelegate+JPush.h */,
 				A6BF82F0228179A200A66858 /* NJAppDelegate+JPush.m */,
-				A6BF827D228179A000A66858 /* ShoppingCartViewControl */,
-				A6BF82F1228179A200A66858 /* Utils */,
-				A6BF82EA228179A100A66858 /* WeChatSDK1.8.4_NoPay */,
 				A6BF824822815D9200A66858 /* ViewController.h */,
 				A6BF824922815D9200A66858 /* ViewController.m */,
-				A6BF824B22815D9200A66858 /* Main.storyboard */,
-				A6BF824E22815D9200A66858 /* Assets.xcassets */,
-				A6BF8278228178C200A66858 /* Header.h */,
+				A6BF82F1228179A200A66858 /* Utils */,
+				A6BF82EA228179A100A66858 /* WeChatSDK1.8.4_NoPay */,
+				A6BF8292228179A000A66858 /* HomeViewControl */,
+				A6BF8348228179A200A66858 /* FriendViewControl */,
+				A6BF827D228179A000A66858 /* ShoppingCartViewControl */,
+				A6BF82C6228179A100A66858 /* MyViewControl */,
 				A6BF8277228178C200A66858 /* PrefixHeader.pch */,
-				A6BF825022815D9200A66858 /* LaunchScreen.storyboard */,
+				A6BF8278228178C200A66858 /* Header.h */,
 				A6BF825322815D9200A66858 /* Info.plist */,
+				A6BF824E22815D9200A66858 /* Assets.xcassets */,
+				A6BF824B22815D9200A66858 /* Main.storyboard */,
+				A6BF825022815D9200A66858 /* LaunchScreen.storyboard */,
 				A6BF825422815D9200A66858 /* main.m */,
 			);
 			path = BaoXiaoSheng;
@@ -458,8 +458,8 @@
 		A6BF8282228179A000A66858 /* control */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF8283228179A000A66858 /* YKYShoppingCartViewController.m */,
 				A6BF8284228179A000A66858 /* YKYShoppingCartViewController.h */,
+				A6BF8283228179A000A66858 /* YKYShoppingCartViewController.m */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -467,18 +467,18 @@
 		A6BF8285228179A000A66858 /* BaseViewControl */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF8286228179A000A66858 /* YKYBaseTabBarViewController.h */,
-				A6BF8287228179A000A66858 /* GeeBaseCoverViewController.m */,
-				A6BF8288228179A000A66858 /* YKYBaseViewController.h */,
-				A6BF8289228179A000A66858 /* shareView.m */,
-				A6BF828A228179A000A66858 /* YKYWebViewViewController.h */,
-				A6BF828B228179A000A66858 /* YKYBaseNavigationControler.m */,
-				A6BF828C228179A000A66858 /* YKYBaseViewController.m */,
-				A6BF828D228179A000A66858 /* YKYBaseTabBarViewController.m */,
 				A6BF828E228179A000A66858 /* GeeBaseCoverViewController.h */,
+				A6BF8287228179A000A66858 /* GeeBaseCoverViewController.m */,
 				A6BF828F228179A000A66858 /* shareView.h */,
-				A6BF8290228179A000A66858 /* YKYWebViewViewController.m */,
+				A6BF8289228179A000A66858 /* shareView.m */,
 				A6BF8291228179A000A66858 /* YKYBaseNavigationControler.h */,
+				A6BF828B228179A000A66858 /* YKYBaseNavigationControler.m */,
+				A6BF8286228179A000A66858 /* YKYBaseTabBarViewController.h */,
+				A6BF828D228179A000A66858 /* YKYBaseTabBarViewController.m */,
+				A6BF8288228179A000A66858 /* YKYBaseViewController.h */,
+				A6BF828C228179A000A66858 /* YKYBaseViewController.m */,
+				A6BF828A228179A000A66858 /* YKYWebViewViewController.h */,
+				A6BF8290228179A000A66858 /* YKYWebViewViewController.m */,
 			);
 			path = BaseViewControl;
 			sourceTree = "<group>";
@@ -505,10 +505,10 @@
 		A6BF8296228179A000A66858 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				A6BF829A228179A000A66858 /* YKYbarView.h */,
 				A6BF8297228179A000A66858 /* YKYbarView.m */,
 				A6BF8298228179A000A66858 /* YKYHomeTableViewCell.h */,
 				A6BF8299228179A000A66858 /* YKYHomeTableViewCell.m */,
-				A6BF829A228179A000A66858 /* YKYbarView.h */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -516,18 +516,18 @@
 		A6BF829B228179A000A66858 /* control */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF829C228179A000A66858 /* YKYHomeGoodsViewController.m */,
 				A6BF829D228179A000A66858 /* BaseTableViewVC.h */,
-				A6BF829E228179A000A66858 /* YNSuspendCenterPageVC.h */,
+				A6BF82C3228179A000A66858 /* BaseTableViewVC.m */,
 				A6BF829F228179A000A66858 /* goodsClassification */,
-				A6BF82AB228179A000A66858 /* YKYHomeViewController.h */,
 				A6BF82AC228179A000A66858 /* goodsDetail */,
+				A6BF82BF228179A000A66858 /* goodsList */,
 				A6BF82B9228179A000A66858 /* searchView */,
 				A6BF82BE228179A000A66858 /* YKYHomeGoodsViewController.h */,
-				A6BF82BF228179A000A66858 /* goodsList */,
-				A6BF82C2228179A000A66858 /* YNSuspendCenterPageVC.m */,
-				A6BF82C3228179A000A66858 /* BaseTableViewVC.m */,
+				A6BF829C228179A000A66858 /* YKYHomeGoodsViewController.m */,
+				A6BF82AB228179A000A66858 /* YKYHomeViewController.h */,
 				A6BF82C4228179A000A66858 /* YKYHomeViewController.m */,
+				A6BF829E228179A000A66858 /* YNSuspendCenterPageVC.h */,
+				A6BF82C2228179A000A66858 /* YNSuspendCenterPageVC.m */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -535,9 +535,9 @@
 		A6BF829F228179A000A66858 /* goodsClassification */ = {
 			isa = PBXGroup;
 			children = (
+				A6BF82AA228179A000A66858 /* goodsClassificationVC.h */,
 				A6BF82A0228179A000A66858 /* goodsClassificationVC.m */,
 				A6BF82A1228179A000A66858 /* menuClassificationView */,
-				A6BF82AA228179A000A66858 /* goodsClassificationVC.h */,
 			);
 			path = goodsClassification;
 			sourceTree = "<group>";
@@ -545,14 +545,14 @@
 		A6BF82A1228179A000A66858 /* menuClassificationView */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF82A2228179A000A66858 /* JDCategoryRightCollectionView.h */,
+				A6BF82A9228179A000A66858 /* JDCategoryLeftTabelView.h */,
+				A6BF82A5228179A000A66858 /* JDCategoryLeftTabelView.m */,
+				A6BF82A8228179A000A66858 /* JDCategoryLeftTableCell.h */,
 				A6BF82A3228179A000A66858 /* JDCategoryLeftTableCell.m */,
 				A6BF82A4228179A000A66858 /* JDCategoryRightCollectionCell.h */,
-				A6BF82A5228179A000A66858 /* JDCategoryLeftTabelView.m */,
-				A6BF82A6228179A000A66858 /* JDCategoryRightCollectionView.m */,
 				A6BF82A7228179A000A66858 /* JDCategoryRightCollectionCell.m */,
-				A6BF82A8228179A000A66858 /* JDCategoryLeftTableCell.h */,
-				A6BF82A9228179A000A66858 /* JDCategoryLeftTabelView.h */,
+				A6BF82A2228179A000A66858 /* JDCategoryRightCollectionView.h */,
+				A6BF82A6228179A000A66858 /* JDCategoryRightCollectionView.m */,
 			);
 			path = menuClassificationView;
 			sourceTree = "<group>";
@@ -560,9 +560,9 @@
 		A6BF82AC228179A000A66858 /* goodsDetail */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF82AD228179A000A66858 /* YKYGoodsViewController.m */,
 				A6BF82AE228179A000A66858 /* view */,
 				A6BF82B8228179A000A66858 /* YKYGoodsViewController.h */,
+				A6BF82AD228179A000A66858 /* YKYGoodsViewController.m */,
 			);
 			path = goodsDetail;
 			sourceTree = "<group>";
@@ -570,15 +570,15 @@
 		A6BF82AE228179A000A66858 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF82AF228179A000A66858 /* NJHomeShopDetailsCell.h */,
-				A6BF82B0228179A000A66858 /* NJRecommendLanguageCell.m */,
-				A6BF82B1228179A000A66858 /* NJHomeDetailTableViewCell.xib */,
+				A6BF82B7228179A000A66858 /* NJHomeDetailTableViewCell.h */,
 				A6BF82B2228179A000A66858 /* NJHomeDetailTableViewCell.m */,
+				A6BF82B1228179A000A66858 /* NJHomeDetailTableViewCell.xib */,
+				A6BF82AF228179A000A66858 /* NJHomeShopDetailsCell.h */,
 				A6BF82B3228179A000A66858 /* NJHomeShopDetailsCell.m */,
 				A6BF82B4228179A000A66858 /* NJHomeShopDetailsCell.xib */,
-				A6BF82B5228179A000A66858 /* NJRecommendLanguageCell.xib */,
 				A6BF82B6228179A000A66858 /* NJRecommendLanguageCell.h */,
-				A6BF82B7228179A000A66858 /* NJHomeDetailTableViewCell.h */,
+				A6BF82B0228179A000A66858 /* NJRecommendLanguageCell.m */,
+				A6BF82B5228179A000A66858 /* NJRecommendLanguageCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -586,10 +586,10 @@
 		A6BF82B9228179A000A66858 /* searchView */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF82BA228179A000A66858 /* YKYSearchViewViewController.h */,
 				A6BF82BB228179A000A66858 /* GeeHomeSearchViewController.h */,
-				A6BF82BC228179A000A66858 /* YKYSearchViewViewController.m */,
 				A6BF82BD228179A000A66858 /* GeeHomeSearchViewController.m */,
+				A6BF82BA228179A000A66858 /* YKYSearchViewViewController.h */,
+				A6BF82BC228179A000A66858 /* YKYSearchViewViewController.m */,
 			);
 			path = searchView;
 			sourceTree = "<group>";
@@ -606,20 +606,20 @@
 		A6BF82C6228179A100A66858 /* MyViewControl */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF82C7228179A100A66858 /* YKYSettingViewController.h */,
-				A6BF82C8228179A100A66858 /* myTeam */,
-				A6BF82CB228179A100A66858 /* YKYMyViewController.m */,
-				A6BF82CC228179A100A66858 /* YKYEarningChildViewController.m */,
-				A6BF82CD228179A100A66858 /* YKYMyEarningViewController.h */,
-				A6BF82CE228179A100A66858 /* YKYMessageViewController.m */,
-				A6BF82CF228179A100A66858 /* YKYSettingViewController.m */,
-				A6BF82D0228179A100A66858 /* YKYMyEarningViewController.m */,
-				A6BF82D1228179A100A66858 /* YKYEarningChildViewController.h */,
-				A6BF82D2228179A100A66858 /* view */,
-				A6BF82DD228179A100A66858 /* YKYMyViewController.h */,
-				A6BF82DE228179A100A66858 /* YKYMessageViewController.h */,
-				A6BF82DF228179A100A66858 /* withdraw */,
 				A6BF82E6228179A100A66858 /* login */,
+				A6BF82C8228179A100A66858 /* myTeam */,
+				A6BF82D2228179A100A66858 /* view */,
+				A6BF82DF228179A100A66858 /* withdraw */,
+				A6BF82D1228179A100A66858 /* YKYEarningChildViewController.h */,
+				A6BF82CC228179A100A66858 /* YKYEarningChildViewController.m */,
+				A6BF82DE228179A100A66858 /* YKYMessageViewController.h */,
+				A6BF82CE228179A100A66858 /* YKYMessageViewController.m */,
+				A6BF82CD228179A100A66858 /* YKYMyEarningViewController.h */,
+				A6BF82D0228179A100A66858 /* YKYMyEarningViewController.m */,
+				A6BF82DD228179A100A66858 /* YKYMyViewController.h */,
+				A6BF82CB228179A100A66858 /* YKYMyViewController.m */,
+				A6BF82C7228179A100A66858 /* YKYSettingViewController.h */,
+				A6BF82CF228179A100A66858 /* YKYSettingViewController.m */,
 			);
 			path = MyViewControl;
 			sourceTree = "<group>";
@@ -627,8 +627,8 @@
 		A6BF82C8228179A100A66858 /* myTeam */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF82C9228179A100A66858 /* YKYMyTeamViewController.m */,
 				A6BF82CA228179A100A66858 /* YKYMyTeamViewController.h */,
+				A6BF82C9228179A100A66858 /* YKYMyTeamViewController.m */,
 			);
 			path = myTeam;
 			sourceTree = "<group>";
@@ -636,16 +636,16 @@
 		A6BF82D2228179A100A66858 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF82D3228179A100A66858 /* YKYMyWithdrawTableViewCell.m */,
-				A6BF82D4228179A100A66858 /* YKYMyViewTableViewCell.m */,
-				A6BF82D5228179A100A66858 /* YKYEarningChildTableViewCell.m */,
-				A6BF82D6228179A100A66858 /* YKYMyTeamTableViewCell.h */,
-				A6BF82D7228179A100A66858 /* YKYMessageTableViewCell.h */,
-				A6BF82D8228179A100A66858 /* YKYMyWithdrawTableViewCell.h */,
-				A6BF82D9228179A100A66858 /* YKYMyViewTableViewCell.h */,
-				A6BF82DA228179A100A66858 /* YKYMyTeamTableViewCell.m */,
 				A6BF82DB228179A100A66858 /* YKYEarningChildTableViewCell.h */,
+				A6BF82D5228179A100A66858 /* YKYEarningChildTableViewCell.m */,
+				A6BF82D7228179A100A66858 /* YKYMessageTableViewCell.h */,
 				A6BF82DC228179A100A66858 /* YKYMessageTableViewCell.m */,
+				A6BF82D6228179A100A66858 /* YKYMyTeamTableViewCell.h */,
+				A6BF82DA228179A100A66858 /* YKYMyTeamTableViewCell.m */,
+				A6BF82D9228179A100A66858 /* YKYMyViewTableViewCell.h */,
+				A6BF82D4228179A100A66858 /* YKYMyViewTableViewCell.m */,
+				A6BF82D8228179A100A66858 /* YKYMyWithdrawTableViewCell.h */,
+				A6BF82D3228179A100A66858 /* YKYMyWithdrawTableViewCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -653,12 +653,12 @@
 		A6BF82DF228179A100A66858 /* withdraw */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF82E0228179A100A66858 /* YKYWithdrawViewController.m */,
 				A6BF82E1228179A100A66858 /* YKYBindingViewController.h */,
-				A6BF82E2228179A100A66858 /* YKYMyWithdrawViewController.h */,
-				A6BF82E3228179A100A66858 /* YKYWithdrawViewController.h */,
 				A6BF82E4228179A100A66858 /* YKYBindingViewController.m */,
+				A6BF82E2228179A100A66858 /* YKYMyWithdrawViewController.h */,
 				A6BF82E5228179A100A66858 /* YKYMyWithdrawViewController.m */,
+				A6BF82E3228179A100A66858 /* YKYWithdrawViewController.h */,
+				A6BF82E0228179A100A66858 /* YKYWithdrawViewController.m */,
 			);
 			path = withdraw;
 			sourceTree = "<group>";
@@ -666,8 +666,8 @@
 		A6BF82E6228179A100A66858 /* login */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF82E7228179A100A66858 /* YKYLoginViewController.m */,
 				A6BF82E8228179A100A66858 /* YKYLoginViewController.h */,
+				A6BF82E7228179A100A66858 /* YKYLoginViewController.m */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -675,11 +675,11 @@
 		A6BF82EA228179A100A66858 /* WeChatSDK1.8.4_NoPay */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF82EB228179A100A66858 /* WXApi.h */,
-				A6BF82EC228179A100A66858 /* WXApiObject.h */,
+				A6BF82EF228179A100A66858 /* libWeChatSDK.a */,
 				A6BF82ED228179A100A66858 /* README.txt */,
 				A6BF82EE228179A100A66858 /* WechatAuthSDK.h */,
-				A6BF82EF228179A100A66858 /* libWeChatSDK.a */,
+				A6BF82EB228179A100A66858 /* WXApi.h */,
+				A6BF82EC228179A100A66858 /* WXApiObject.h */,
 			);
 			path = WeChatSDK1.8.4_NoPay;
 			sourceTree = "<group>";
@@ -698,16 +698,16 @@
 		A6BF82F2228179A200A66858 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF82F3228179A200A66858 /* UIColor+UIColor_Hex_color.m */,
-				A6BF82F4228179A200A66858 /* NSDate+Helper.mm */,
-				A6BF82F5228179A200A66858 /* NSString+timeDate.m */,
-				A6BF82F6228179A200A66858 /* NSString+CommonYR.m */,
-				A6BF82F7228179A200A66858 /* UIColor+expanded.h */,
 				A6BF82F8228179A200A66858 /* NSDate+Helper.h */,
-				A6BF82F9228179A200A66858 /* UIColor+UIColor_Hex_color.h */,
-				A6BF82FA228179A200A66858 /* NSString+timeDate.h */,
-				A6BF82FB228179A200A66858 /* UIColor+expanded.m */,
+				A6BF82F4228179A200A66858 /* NSDate+Helper.mm */,
 				A6BF82FC228179A200A66858 /* NSString+CommonYR.h */,
+				A6BF82F6228179A200A66858 /* NSString+CommonYR.m */,
+				A6BF82FA228179A200A66858 /* NSString+timeDate.h */,
+				A6BF82F5228179A200A66858 /* NSString+timeDate.m */,
+				A6BF82F7228179A200A66858 /* UIColor+expanded.h */,
+				A6BF82FB228179A200A66858 /* UIColor+expanded.m */,
+				A6BF82F9228179A200A66858 /* UIColor+UIColor_Hex_color.h */,
+				A6BF82F3228179A200A66858 /* UIColor+UIColor_Hex_color.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -715,13 +715,13 @@
 		A6BF82FD228179A200A66858 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF82FE228179A200A66858 /* YKYUserInforModel.h */,
 				A6BF82FF228179A200A66858 /* Util */,
+				A6BF8309228179A200A66858 /* YKYNetWorking.h */,
 				A6BF8306228179A200A66858 /* YKYNetWorking.m */,
 				A6BF8307228179A200A66858 /* YKYUserInfor.h */,
-				A6BF8308228179A200A66858 /* YKYUserInforModel.m */,
-				A6BF8309228179A200A66858 /* YKYNetWorking.h */,
 				A6BF830A228179A200A66858 /* YKYUserInfor.m */,
+				A6BF82FE228179A200A66858 /* YKYUserInforModel.h */,
+				A6BF8308228179A200A66858 /* YKYUserInforModel.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -729,12 +729,12 @@
 		A6BF82FF228179A200A66858 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF8300228179A200A66858 /* Utils.h */,
-				A6BF8301228179A200A66858 /* SDUpdate.h */,
 				A6BF8302228179A200A66858 /* GeeTextView.h */,
-				A6BF8303228179A200A66858 /* Utils.m */,
-				A6BF8304228179A200A66858 /* SDUpdate.m */,
 				A6BF8305228179A200A66858 /* GeeTextView.m */,
+				A6BF8301228179A200A66858 /* SDUpdate.h */,
+				A6BF8304228179A200A66858 /* SDUpdate.m */,
+				A6BF8300228179A200A66858 /* Utils.h */,
+				A6BF8303228179A200A66858 /* Utils.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -762,14 +762,14 @@
 		A6BF830E228179A200A66858 /* YRPreviewImageView */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF830F228179A200A66858 /* YRPreviewScrollView.m */,
-				A6BF8310228179A200A66858 /* YRPreviewDataSource.h */,
-				A6BF8311228179A200A66858 /* YRPreviewImageView.h */,
 				A6BF8312228179A200A66858 /* YRPreviewCell.h */,
-				A6BF8313228179A200A66858 /* YRPreviewImageView.m */,
-				A6BF8314228179A200A66858 /* YRPreviewDataSource.m */,
-				A6BF8315228179A200A66858 /* YRPreviewScrollView.h */,
 				A6BF8316228179A200A66858 /* YRPreviewCell.m */,
+				A6BF8310228179A200A66858 /* YRPreviewDataSource.h */,
+				A6BF8314228179A200A66858 /* YRPreviewDataSource.m */,
+				A6BF8311228179A200A66858 /* YRPreviewImageView.h */,
+				A6BF8313228179A200A66858 /* YRPreviewImageView.m */,
+				A6BF8315228179A200A66858 /* YRPreviewScrollView.h */,
+				A6BF830F228179A200A66858 /* YRPreviewScrollView.m */,
 			);
 			path = YRPreviewImageView;
 			sourceTree = "<group>";
@@ -777,10 +777,10 @@
 		A6BF8317228179A200A66858 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				A6BF831B228179A200A66858 /* MBProgressHUD.bundle */,
+				A6BF831A228179A200A66858 /* MBProgressHUD.h */,
 				A6BF8318228179A200A66858 /* MBProgressHUD.m */,
 				A6BF8319228179A200A66858 /* MBProgressHUD+GR.h */,
-				A6BF831A228179A200A66858 /* MBProgressHUD.h */,
-				A6BF831B228179A200A66858 /* MBProgressHUD.bundle */,
 				A6BF831C228179A200A66858 /* MBProgressHUD+GR.m */,
 			);
 			path = MBProgressHUD;
@@ -789,13 +789,13 @@
 		A6BF831D228179A200A66858 /* SDCycleScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF831E228179A200A66858 /* UIView+SDExtension.h */,
-				A6BF831F228179A200A66858 /* SDCycleScrollView.h */,
-				A6BF8320228179A200A66858 /* SDCollectionViewCell.h */,
-				A6BF8321228179A200A66858 /* SDCycleScrollView.m */,
-				A6BF8322228179A200A66858 /* UIView+SDExtension.m */,
-				A6BF8323228179A200A66858 /* SDCollectionViewCell.m */,
 				A6BF8324228179A200A66858 /* PageControl */,
+				A6BF8320228179A200A66858 /* SDCollectionViewCell.h */,
+				A6BF8323228179A200A66858 /* SDCollectionViewCell.m */,
+				A6BF831F228179A200A66858 /* SDCycleScrollView.h */,
+				A6BF8321228179A200A66858 /* SDCycleScrollView.m */,
+				A6BF831E228179A200A66858 /* UIView+SDExtension.h */,
+				A6BF8322228179A200A66858 /* UIView+SDExtension.m */,
 			);
 			path = SDCycleScrollView;
 			sourceTree = "<group>";
@@ -828,11 +828,11 @@
 			isa = PBXGroup;
 			children = (
 				A6BF8331228179A200A66858 /* Category */,
-				A6BF8338228179A200A66858 /* YNPageViewController.m */,
-				A6BF8339228179A200A66858 /* YNPageConfigration.m */,
 				A6BF833A228179A200A66858 /* View */,
 				A6BF8345228179A200A66858 /* YNPageConfigration.h */,
+				A6BF8339228179A200A66858 /* YNPageConfigration.m */,
 				A6BF8346228179A200A66858 /* YNPageViewController.h */,
+				A6BF8338228179A200A66858 /* YNPageViewController.m */,
 			);
 			path = YNPageViewController;
 			sourceTree = "<group>";
@@ -840,12 +840,12 @@
 		A6BF8331228179A200A66858 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF8332228179A200A66858 /* UIViewController+YNPageExtend.m */,
-				A6BF8333228179A200A66858 /* UIView+YNPageExtend.m */,
 				A6BF8334228179A200A66858 /* UIScrollView+YNPageExtend.h */,
-				A6BF8335228179A200A66858 /* UIView+YNPageExtend.h */,
-				A6BF8336228179A200A66858 /* UIViewController+YNPageExtend.h */,
 				A6BF8337228179A200A66858 /* UIScrollView+YNPageExtend.m */,
+				A6BF8335228179A200A66858 /* UIView+YNPageExtend.h */,
+				A6BF8333228179A200A66858 /* UIView+YNPageExtend.m */,
+				A6BF8336228179A200A66858 /* UIViewController+YNPageExtend.h */,
+				A6BF8332228179A200A66858 /* UIViewController+YNPageExtend.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -853,16 +853,16 @@
 		A6BF833A228179A200A66858 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A6BF833B228179A200A66858 /* YNPageHeaderScrollView.h */,
-				A6BF833C228179A200A66858 /* YNPageTableView.m */,
 				A6BF833D228179A200A66858 /* YNPageCollectionView.h */,
-				A6BF833E228179A200A66858 /* YNPageScrollMenuView.h */,
-				A6BF833F228179A200A66858 /* YNPageScrollView.m */,
-				A6BF8340228179A200A66858 /* YNPageHeaderScrollView.m */,
 				A6BF8341228179A200A66858 /* YNPageCollectionView.m */,
-				A6BF8342228179A200A66858 /* YNPageTableView.h */,
+				A6BF833B228179A200A66858 /* YNPageHeaderScrollView.h */,
+				A6BF8340228179A200A66858 /* YNPageHeaderScrollView.m */,
+				A6BF833E228179A200A66858 /* YNPageScrollMenuView.h */,
 				A6BF8343228179A200A66858 /* YNPageScrollMenuView.m */,
 				A6BF8344228179A200A66858 /* YNPageScrollView.h */,
+				A6BF833F228179A200A66858 /* YNPageScrollView.m */,
+				A6BF8342228179A200A66858 /* YNPageTableView.h */,
+				A6BF833C228179A200A66858 /* YNPageTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -888,11 +888,11 @@
 			isa = PBXGroup;
 			children = (
 				A6BF834B228179A200A66858 /* NJNectarSchoolTableViewCell.h */,
-				A6BF834C228179A200A66858 /* NJNectarTableViewCell.h */,
-				A6BF834D228179A200A66858 /* NJNectarTableViewCell.xib */,
 				A6BF834E228179A200A66858 /* NJNectarSchoolTableViewCell.m */,
 				A6BF834F228179A200A66858 /* NJNectarSchoolTableViewCell.xib */,
+				A6BF834C228179A200A66858 /* NJNectarTableViewCell.h */,
 				A6BF8350228179A200A66858 /* NJNectarTableViewCell.m */,
+				A6BF834D228179A200A66858 /* NJNectarTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
