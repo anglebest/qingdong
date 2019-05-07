@@ -1,0 +1,24 @@
+platform :ios, '9.0' 
+
+
+target 'BaoXiaoSheng' do
+pod 'AFNetworking'
+
+pod 'TZImagePickerController' #相册预览
+pod 'MJRefresh'  #刷新
+pod 'SDWebImage/GIF' #gif加载
+pod 'SDWebImage'  #图片加载
+pod 'IQKeyboardManager' #键盘自适应
+pod 'Masonry' #约束
+pod 'CYLTabBarController' #tabbar自定
+
+pod 'YYKit' #富文本显示
+
+pod 'Lockbox' # 钥匙串安全使用
+
+pod 'ReactiveObjC' #响应式开发
+
+pod 'JPush' #极光推送 
+
+end
+

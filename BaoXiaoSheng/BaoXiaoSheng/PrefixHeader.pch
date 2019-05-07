@@ -1,0 +1,78 @@
+//
+//  PrefixHeader.pch
+//  ShengYa
+//
+//  Created by 王开政 on 2019/4/11.
+//  Copyright © 2019年 Wkz. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+# import "Header.h"
+
+#import "AppDelegate.h"
+// 控件约束
+#import <Masonry/Masonry.h>
+
+
+
+// 图片持久化
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+
+// 键盘管理
+#import <IQKeyboardManager/IQKeyboardManager.h>
+// 下拉刷新，上拉加载
+#import <MJRefresh/MJRefresh.h>
+//加载
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+GR.h"
+//网络请求
+#import "YKYNetWorking.h"
+
+//首页数据模型
+#import "YKYHomeModel.h"
+// 响应式开发
+#import <ReactiveObjC/ReactiveObjC.h>
+
+// 单例宏定义声明
+#import "Singleton.h"
+
+#import "YKYUserInfor.h"
+// 工具
+#import "Utils.h"
+// 相册图片展示
+#import <TZImagePickerController/TZImagePickerController.h>
+#import <TZImagePickerController/TZImageManager.h>
+#import <TZImagePickerController/TZPhotoPreviewCell.h>
+#import <TZImagePickerController/TZPhotoPreviewController.h>
+
+// 富文本
+#import <YYKit/YYLabel.h>
+#import <YYKit/NSAttributedString+YYText.h>
+#import <YYKit/UIView+YYAdd.h>
+#import <YYKit/YYTextView.h>
+
+
+
+#import <YYKit/NSDictionary+YYAdd.h>
+#import <YYKit/NSDate+YYAdd.h>
+#import <YYKit/NSString+YYAdd.h>
+#import <YYKit/NSObject+YYModel.h>
+#import <YYKit/YYImage.h>
+#import <YYKit/YYWebImageManager.h>
+#import <YYKit/UIImageView+YYWebImage.h>
+#import <YYKit/UIButton+YYWebImage.h>
+
+
+#import "NSString+CommonYR.h"
+
+#import "NSString+timeDate.h"
+
+#import "UIColor+UIColor_Hex_color.h"
+#endif /* PrefixHeader_pch */
