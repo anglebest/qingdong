@@ -11,21 +11,12 @@
 #import "YKYbarView.h"
 
 #import "goodsClassificationVC.h"
-
-
 #import "YKYGoodsListViewController.h"
-
-
-
 #import "YKYGoodsViewController.h"
-
 #import "YKYSearchViewViewController.h"
-
 #import "GeeHomeSearchViewController.h"
 #import "YNSuspendCenterPageVC.h"
-
 #import "YKYHomeGoodsViewController.h"
-
 #import "YKYWebViewViewController.h"
 
 
@@ -38,6 +29,8 @@
 @property (nonatomic, strong) UIView *navView;
 
 @property (nonatomic, strong) UIImageView *logoImg;
+
+@property (nonatomic, strong) UIImageView *smilingaceImg;
 
 @property (nonatomic, strong) UILabel *titleLab;
 
@@ -63,14 +56,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-   
-    
-    
     [self  getClassRequest];
-    
-    
-   
     // Do any additional setup after loading the view.
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -85,7 +71,7 @@
     
     if (!_headview) {
         _headview = [UIView new];
-        _headview.frame = CGRectMake(0, 0, kScreenWidth, 264*RATIO);
+        _headview.frame = CGRectMake(0, 0, kScreenWidth, 280*RATIO);
         
     }
     return _headview;
@@ -106,10 +92,20 @@
     
     if (!_logoImg) {
         _logoImg = [UIImageView new];
-        _logoImg.image = [UIImage imageNamed:@"首页logo"];
+        _logoImg.image = [UIImage imageNamed:@"home_name_icon"];
     }
     return _logoImg;
 }
+
+-(UIImageView *)smilingaceImg{
+    
+    if (!_smilingaceImg) {
+        _smilingaceImg = [UIImageView new];
+        _smilingaceImg.image = [UIImage imageNamed:@"home_logo"];
+    }
+    return _smilingaceImg;
+}
+
 -(UILabel *)titleLab{
     
     if (!_titleLab) {
@@ -133,12 +129,10 @@
         _searchView.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 5.f);
         _searchView.backgroundColor = [UIColor colorWithWhite:1 alpha:1];
         [_searchView setImage:[UIImage imageNamed:@"搜索"] forState:UIControlStateNormal];
-        [_searchView setTitle:@"输入关键字查券，领取返利红包" forState:UIControlStateNormal];
-        _searchView.titleLabel.font = KPFFont(12);
-        [_searchView setTitleColor:kColor(149, 149, 149) forState:UIControlStateNormal];
+        [_searchView setTitle:@"复制商品链接领取返利红包" forState:UIControlStateNormal];
+        _searchView.titleLabel.font = KPFFont(15);
+        [_searchView setTitleColor:kColor(153, 153, 153) forState:UIControlStateNormal];
         [_searchView addTarget:self action:@selector(searchAction) forControlEvents:UIControlEventTouchUpInside];
-        
-        
     }
     return _searchView;
 }
@@ -154,11 +148,7 @@
         [_searchBtn setTitleColor:kColor(83, 83, 83) forState:UIControlStateNormal];
         
         [_searchBtn addTarget:self action:@selector(searchAction) forControlEvents:UIControlEventTouchUpInside];
-        
-        
-       
-        
-        
+
     }
     return _searchBtn;
 }
@@ -217,7 +207,6 @@
 //    }];
     
    
-
 //    [self.headview mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.top.equalTo(self.view).mas_offset(0);
 //        make.left.right.equalTo(self.view);
@@ -226,45 +215,51 @@
 //
     
     [self setBackGroundGradientColor:self.headview];
-    
     [self.headview addSubview:self.logoImg];
     [self.logoImg mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.headview).mas_offset(40*RATIO);
-        make.left.equalTo(self.headview).mas_offset(159*RATIO);
-        make.right.equalTo(self.headview).mas_offset(-159*RATIO);
-        make.height.mas_equalTo(34*RATIO);
+        make.centerX.equalTo(self.headview);
+        make.top.equalTo(self.headview).mas_offset(44*RATIO);
+        make.size.mas_equalTo(CGSizeMake(86*RATIO, 30*RATIO));
     }];
+
     
     [self.headview addSubview:self.titleLab];
     [self.titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.logoImg.mas_bottom).mas_offset(11*RATIO);
+        make.top.equalTo(self.logoImg.mas_bottom).mas_offset(15*RATIO);
         make.left.equalTo(self.headview).mas_offset(0*RATIO);
         make.right.equalTo(self.headview).mas_offset(0*RATIO);
-        make.height.mas_equalTo(12*RATIO);
+        make.height.mas_equalTo(13*RATIO);
     }];
+    
+    [self.headview addSubview:self.smilingaceImg];
     
     [self.headview addSubview:self.searchView];
     [self.searchView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.titleLab.mas_bottom).mas_offset(37*RATIO);
+        make.top.equalTo(self.titleLab.mas_bottom).mas_offset(35*RATIO);
         make.left.equalTo(self.headview).mas_offset(15*RATIO);
         make.right.equalTo(self.headview).mas_offset(-110*RATIO);
-        make.height.mas_equalTo(36*RATIO);
+        make.height.mas_equalTo(45*RATIO);
     }];
     [self.searchView layoutIfNeeded];
     //这里设置的是左上和左下角
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.searchView.bounds   byRoundingCorners:UIRectCornerBottomLeft |    UIRectCornerTopLeft    cornerRadii:CGSizeMake(10, 10)];
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.searchView.bounds   byRoundingCorners:UIRectCornerBottomLeft |    UIRectCornerTopLeft    cornerRadii:CGSizeMake(5, 5)];
     CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
     maskLayer.frame = self.searchView.bounds;
     maskLayer.path = maskPath.CGPath;
     self.searchView.layer.mask = maskLayer;
     
+    [self.smilingaceImg mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.searchView.mas_left).mas_offset(12*RATIO);
+        make.bottom.equalTo(self.searchView.mas_top).mas_offset(12*RATIO);
+        make.size.mas_offset(CGSizeMake(67*RATIO, 64*RATIO));
+    }];
     
     [self.headview addSubview:self.searchBtn];
     [self.searchBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.titleLab.mas_bottom).mas_offset(37*RATIO);
+        make.top.equalTo(self.searchView);
         make.left.equalTo(self.searchView.mas_right).mas_offset(0 *RATIO);
         make.right.equalTo(self.headview).mas_offset(-15*RATIO);
-        make.height.mas_equalTo(36*RATIO);
+        make.height.mas_equalTo(45*RATIO);
     }];
     [self.searchBtn layoutIfNeeded];
     //这里设置的是左上和左下角
@@ -279,8 +274,8 @@
     
     [self.headview addSubview:self.stepLab];
     [self.stepLab mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.titleLab.mas_bottom).mas_offset(107*RATIO);
-        make.left.equalTo(self.headview).mas_offset(15 *RATIO);
+        make.top.equalTo(self.searchView.mas_bottom).mas_offset(25*RATIO);
+        make.left.equalTo(self.searchView);
         make.right.equalTo(self.headview).mas_offset(-15*RATIO);
         make.height.mas_equalTo(17*RATIO);
     }];
